@@ -2,76 +2,105 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="sticky-footer.css" rel="stylesheet">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <div class="headerContainer">
-                <h1 id="name">Jennifer Cobb</h1>
-                <ul>
-                    <li>
-                        <a href="index.html">About</a>
-                    </li>
-                    <li>
-                        <a href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-        </header>
-
-        <div class="sectionContainer">
-            <h1 id="subheading">Contact</h1>
-            <div class="form">
-                <label for="yourName">Name</label>
-                <input type="text" id="yourName" name="yourname" placeholder="Your name..">
-    
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Your email..">
-    
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                    <option value="usa">USA</option>
-                    <option value="mexico">Mexico</option>
-                    <option value="canada">Canada</option>
-                </select>
-    
-                <label for="message">Message</label>
-                <textarea id="message"></textarea>
-    
-                <input type="submit" value="Submit">
-                </form>
-            </div>
-            <p id="linkedIn">
-                <a href="https://www.linkedin.com/in/jennifer-cobb-92a28065" target="_blank">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <!-- <a href="https://www.linkedin.com/in/jennifer-cobb-92a28065" target="_blank">Find me on LinkedIn</a> -->
-            </p>
-            <p id= "gitHub">
-                <a href="https://github.com/Jcobb27" target="_blank">
-                    <i class="fa fa-github"></i>
-                </a>
-                <!-- <a href="https://github.com/Jcobb27" target="_blank">Find me on Github</a> -->
-            </p>
-        </div>
+    <div id = "gradient">
+  <!-- Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light" id="navbarSection">
+    <div class="container" id="navContainer">
+        <a href="index.html" class="nounderline">
+            <div id="Name">Jennifer Cobb</div></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+           
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="https://github.com/Jcobb27" target="_blank"><i class="fa fa-github"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/jennifer-cobb-92a28065" target="_blank"><i class="fa fa-linkedin"></i></a>
+              </li>
+        </ul>
+      </div>
     </div>
-    <div class="footer">Designed by Jennifer Cobb</div>
+  </nav>
 
+  <!--Main Body-->
+  <div class="container containerHB">
+    <div class="row">
+      <h1 id="subheading">Contact</h1>
+    </div>
+
+    <!--Contact Form-->
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Name</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your name">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+    </form>
+  </div>
+
+ <!-- Footer -->
+ <footer class="footer" id="sticky-footer">
+    <div class="container">
+      <span>Designed by Jennifer Cobb.
+        <a href="https://github.com/Jcobb27" target="_blank">
+          <i class="fa fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jennifer-cobb-92a28065" target="_blank">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </span>
+    </div>
+  </footer>
+  <!-- Footer -->
+</div>
 </body>
 
 </html>
