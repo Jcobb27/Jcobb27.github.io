@@ -3,8 +3,13 @@ body, html {
 }
 
 .parallax { 
-    /* The image used */
-    background-image: url("images/jumbotron_bg.jfif");
+    /* Color gradient added */
+    background-image: 
+    linear-gradient(
+        rgba(110, 110, 110, 0.1),
+        rgba(110, 110, 110, 0.6)
+      ),
+    url("images/bg\ ocean.jfif");
 
     /* Full height */
     height: 300px; 
@@ -19,11 +24,21 @@ body, html {
 #header {
     text-align: center;
     font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 
 .nav-item {
     font-size: 1.2rem;
     border-right: 1px solid rgb(182, 182, 182);
+}
+
+#nav-text {
+    color: white;
+}
+
+a.hover {
+    color: gray;
 }
 
 .nav-item:last-child{
@@ -43,7 +58,7 @@ body, html {
     width: 200px;
     height: auto; 
     float:left;
-    margin: 0 10px 10px 0;
+    margin-right: 60px;
     border-radius: 20px;
 }
 
@@ -56,15 +71,17 @@ body, html {
 #aboutSection {
     margin-top: 100px;
     margin-bottom: 100px;
+    padding-right: 100px;
 }
 
 #aboutText {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
 }
 
 #contactInfo{
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
 }
 
 #carouselContainer {
@@ -74,11 +91,13 @@ body, html {
 
 #contactInfo{
     margin: 100px 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #subheading {
     margin-left: 20px;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .fa-github {
@@ -91,9 +110,19 @@ body, html {
 }
 .footer {
     text-align: center;
-    background-color: #afc9f2;
+    background-color: #5185b9;
+    color: white;
     padding: 20px 0;
     border-top: 2px solid rgb(180, 180, 180);
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Media Queries*/
+
+@media(max-width:768px){
+    #nav-text {
+        color: black;
+    }
 }
 
 @media(max-width:576px){
@@ -103,4 +132,8 @@ body, html {
     .jumbotron {
         padding: 4rem;
     }
+    #nav-text {
+        color: black;
+    }
+    
 }
